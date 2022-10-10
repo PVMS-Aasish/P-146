@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-entity position="20 10 15">
+      <a-camera></a-camera>
+  </a-entity>
+    <a-scene >
+      <a-entity position="0 0 15">
+        <a-camera></a-camera>
+    </a-entity>
+        <a-sky color="#ECECEC"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="black"></a-plane>
+        <a-circle position="0 9 0" color="orange" radius="0.8" material="side:double"></a-circle>
+        <a-cylinder position="1 11 0" radius="0.05" height="1.5" color="#FFC65D" animation="property:position;from:-0.2 10.4 -0.1;to:0.2 10.4 -0.1;dir:alternate;loop:true;dur:1000"></a-cylinder>
+        <a-sphere position="0 11 0" radius="0.3" color="#EF2D5E" animation="property:position;from:-0.2 11 -0.1;to:0.2 11 -0.1;dir:alternate;loop:true;dur:1000"></a-sphere>
+      <a-box position="0 8 0" color="skyblue" width=3.2 height=2.2></a-box>
+      <a-sphere position="-0.63 8.1 9" radius="0.3" color="white" animation="property:position;from:-0.63 8.1 9;to:-0.63 8.1 0.9;dir:alternate;dur:1000"></a-sphere>
+      <a-sphere position="0.63 8.1 9" radius="0.3" color="white" animation="property:position;from:0.63 8.1 9;to:0.63 8.1 0.9;dir:alternate;dur:1000"></a-sphere>
+      <a-box position="0 6.5 0" color="yellow" width=2 height=0.5></a-box>
+      <a-box position="0 4.80 0" color="skyblue" width=3.75 height=3></a-box>
+      <a-cylinder position="-0.75 3 0" radius="0.25" height="2.25" color="#FFC65D"></a-cylinder>
+      <a-cylinder position="0.75 3 0" radius="0.25" height="2.25" color="#FFC65D"></a-cylinder>
+
+      <a-sphere position="0.75 1.75 0" radius="0.3" color="#EF2D5E"></a-sphere>
+      <a-sphere position="-0.75 1.75 0" radius="0.3" color="#EF2D5E"></a-sphere>
+
+      <a-cylinder position="2.3 5.4 0" radius="0.25" height="1.75" color="orange" rotation="2 5 40"></a-cylinder>
+     
+      <a-cylinder position="-2.3  5.4 0" radius="0.25" height="1.75" color="orange" rotation="-2 5 -40"></a-cylinder>
+
+      <a-sphere position="-3 4.7 0"  radius="0.25" color="#EF2D5E"></a-sphere>
+      <a-sphere position="3 4.6 0" radius="0.25" color="#EF2D5E"></a-sphere>
+      
+      <a-cylinder position="3.5 5 0" radius="0.25" height="0.9" color="orange" rotation="3.55 5 -55"></a-cylinder>
+      <a-cylinder position="-3.55 5 0" radius="0.25" height="0.9" color="orange" rotation="-3.55 5 55"></a-cylinder>
+
+      <a-box position="0 4.7 0.3" color="red" width=0.5 height=2.5 ></a-box>
+      <a-circle position="-0.63 7.9 1.2" color="black" radius="0.15" ></a-circle>
+      <a-circle position="0.63 7.9 1.2" color="black" radius="0.15" ></a-circle>
+
+      <a-box position="-1 4 0.3" color="white" height="0.5"  animation="property:position;from:-1 4 0.4;to:-1 4 0.8;dir:alternate;loop:true;dur:500" ></a-box>
+      <a-box position="1 4 0.3" color="white" height="0.5" animation="property:position;from:1 4 0.4;to:1 4 0.10;dir:alternate;loop:true;dur:200" ></a-box> 
+      <a-box position="-1 5 0.3" color="white" height="0.5" animation="property:position;from:-1 5 0.4;to:-1 5 0.9;dir:alternate;loop:true;dur:300"></a-box>
+      <a-box position="1 5 0.3" color="white" height="0.5" animation="property:position;from:1 5 0.4;to:1 5 0.6;dir:alternate;loop:true;dur:400"></a-box> 
+
+      <a-entity position="-4.2 5.4 0"  geometry="primitive: dodecahedron; radius: 0.30"></a-entity>
+      <a-entity position="4.2 5.4 0"  geometry="primitive: dodecahedron; radius: 0.30"></a-entity>
+       
+      <a-torus position="-0 7.4 1 " color="orange" arc="180" radius="0.55" radius-tubular="0.05" rotation="180 0 0"></a-torus>
+
+    </a-scene>
+  </body>
+</html>
